@@ -1,0 +1,60 @@
+.filters {
+    align-items: stretch;
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    display: flex;
+    height: 70px;
+    width: 100%;
+}
+
+.filters div {
+    position: relative;
+    width: 25%;
+}
+.filters div:not(:last-of-type) {
+    border-right: 1px solid #DDDDDD
+}
+
+.filters div h3 {
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 0 10%;
+}
+.filters div h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 10%;
+}
+
+.filters ul { list-style-type: none; }
+
+.filters button {
+    background-color: #FF5A5F;
+    border-radius: 4px;
+    border: 0;
+    color: #FFFFFF;
+    float: right;
+    font-size: 18px;
+    height: 48px;
+    margin: 11px 30px 0 auto;
+    order: 1;
+    width: 20%;
+}
+.filters button:hover {
+    opacity: 0.9;
+}
+
+.popover {
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 70px;
+    position: absolute;
+    padding: 10% 0;
+    visibility: hidden;
+    width: 100%;
+}
+.filters div:hover .popover { visibility: visible; }
